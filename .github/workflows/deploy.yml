@@ -23,8 +23,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
-      - run: npm i @toast-ui/react-editor --force
-      - run: npm ci
+      - run: npm ci  --legacy-peer-deps
       - run: npm run build
       - name: Detect build dir
         id: outdir
