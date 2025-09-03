@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
+      - run: npm i @toast-ui/react-editor --force
       - run: npm ci
       - run: npm run build
       - name: Detect build dir
